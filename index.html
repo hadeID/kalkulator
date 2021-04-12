@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hade | Mini Kalkulator</title>
+    <link rel="stylesheet" href="hadestyle.css">
+</head>
+<body>
+    <div class="hadewrap">
+        <h1>Hade | Mini Kalkulator</h1>
+
+            <!--
+             Nama            : Dedi Sutomo
+             No Pendaftaran  : 0970777071-2
+             Pelatihan       : HTML & CSS, JavaScript 
+            -->
+
+        <form name="hadeform">
+            <input type="text" name="tampilkan" disabled>
+            <br><br>
+            <input title="Bersihkan Layar" id="btnac" type="button" value ="AC" onclick ="hadeform.tampilkan.value = ''">
+            <br><br>
+            <input title="Sinus Bilangan" type="button" value ="Sin" onclick ="hadeform.tampilkan.value = eval(Math.sin(hadeform.tampilkan.value))">
+            <input title="Cosinus Bilangan" type="button" value ="Cos" onclick ="hadeform.tampilkan.value = eval(Math.cos(hadeform.tampilkan.value))">
+            <input title="Tangen Bilangan" type="button" value ="Tan" onclick ="hadeform.tampilkan.value = eval(Math.tan(hadeform.tampilkan.value))">
+            <input title="Kuadrat Bilangan" type="button" value ="X&sup2" onclick ="hadeform.tampilkan.value = eval(hadeform.tampilkan.value * hadeform.tampilkan.value)">
+            <input title="Akar Kuadrat Bilangan" type="button" value ="&radic;" onclick ="hadeform.tampilkan.value = eval(Math.sqrt(hadeform.tampilkan.value))">
+            <br><br>
+            <input type="button" value ="7" onclick ="hadeform.tampilkan.value += '7'">
+            <input type="button" value ="8" onclick ="hadeform.tampilkan.value += '8'">
+            <input type="button" value ="9" onclick ="hadeform.tampilkan.value += '9'">
+            <input title="1 per Bilangan" type="button" value ="&sup1;/x" onclick ="hadeform.tampilkan.value = eval(1/hadeform.tampilkan.value)">
+            <input title="Sisa Pembagian" type="button" value ="%" onclick ="hadeform.tampilkan.value+='%'">  
+            <br><br>
+            <input type="button" value ="4" onclick ="hadeform.tampilkan.value += '4'">
+            <input type="button" value ="5" onclick ="hadeform.tampilkan.value += '5'">
+            <input type="button" value ="6" onclick ="hadeform.tampilkan.value += '6'">
+            <input title="Perkalian" type="button" value ="x" onclick ="hadeform.tampilkan.value += '*'">
+            <input title="Pembagian" type="button" value ="&divide;" onclick ="hadeform.tampilkan.value += '/'">
+            <br><br>
+            <input type="button" value ="1" onclick ="hadeform.tampilkan.value += '1'">
+            <input type="button" value ="2" onclick ="hadeform.tampilkan.value += '2'">
+            <input type="button" value ="3" onclick ="hadeform.tampilkan.value += '3'">
+            <input title="Pengurangan" type="button" value ="+" onclick ="hadeform.tampilkan.value += '+'">
+            <input title="Pertambahan" type="button" value ="-" onclick ="hadeform.tampilkan.value += '-'">
+            <br><br>
+            <input type="button" id="btnzero" value ="0" onclick ="hadeform.tampilkan.value += '0'">
+            <input type="button" value ="." onclick ="hadeform.tampilkan.value += '.'">
+            <input type="button" id="btnequal" value ="=" onclick ="hadeform.tampilkan.value = eval(hadeform.tampilkan.value)">
+        </form>
+    </div>
+        
+</body>
+</html>
